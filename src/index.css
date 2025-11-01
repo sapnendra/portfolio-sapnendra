@@ -45,7 +45,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: 12px;
+      bottom: 0px;
       width: 99%;
       height: clamp(2px, 1vh, 12px);
       background: var(--color-gradient);
@@ -55,7 +55,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: 6px;
+      bottom: -5px;
       width: 99%;
       height: 2px;
       background: var(--color-gradient);

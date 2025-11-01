@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Logo from '../assets/images/logo.svg'
 import { gsap } from "gsap";
 import { useGSAP } from '@gsap/react';
@@ -28,7 +28,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link to='/'>
-            <h1 className='text-4xl font-bold'>SAPNENDRA</h1>
+            <h1 className='text-4xl font-bold'>ANSAP</h1>
           </Link>
 
           {/* Menu */}
