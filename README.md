@@ -1,7 +1,6 @@
 # 🚀 React Animated Portfolio
 
-A modern and fully responsive **portfolio website** built with **React** and **GSAP animations**.  
-This project showcases smooth scroll-based animations, reusable components, and a clean UI/UX design.
+A modern and fully responsive **portfolio website** built with **React** and **GSAP animations**.
 
 ---
 
@@ -28,7 +27,7 @@ This project showcases smooth scroll-based animations, reusable components, and 
 Clone the project and install dependencies:
 
 ### Clone repository
-git clone https://github.com/sapnendra/react-portfolio.git
+git clone https://github.com/sapnendra/sapnendra.git
 
 ### Go inside folder
 cd react-portfolio
