@@ -1,10 +1,10 @@
-# 🚀 React Animated Portfolio
+# React Animated Portfolio
 
 A modern and fully responsive **portfolio website** built with **React** and **GSAP animations**.
 
 ---
 
-## ✨ Features
+## Features
 - Responsive design
 - Smooth GSAP animations  
 - Reusable React components  
@@ -13,7 +13,7 @@ A modern and fully responsive **portfolio website** built with **React** and **G
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 - React 19  
 - Vite (or CRA, depending on your setup)  
 - Tailwind CSS  
@@ -22,15 +22,15 @@ A modern and fully responsive **portfolio website** built with **React** and **G
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 Clone the project and install dependencies:
 
 ### Clone repository
-git clone https://github.com/sapnendra/sapnendra.git
+git clone https://github.com/sapnendra/portfolio-sapnendra.git
 
 ### Go inside folder
-cd react-portfolio
+cd portfolio-sapnendra
 
 ### Install dependencies
 npm install
@@ -39,5 +39,5 @@ npm install
 npm start
 
 
-## 👩‍💻 Author
-Built with ❤️ by sapnendra.com (https://github.com/sapnendra)  
+## Author
+Built with ❤️ by Sapnendra (https://github.com/sapnendra)  
