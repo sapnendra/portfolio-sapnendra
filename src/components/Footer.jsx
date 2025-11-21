@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -11,23 +10,15 @@ const Footer = () => {
       {/* Footer Top */}
       <footer className="main-container grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-20">
         <Link to="/">
-          <h1 className="text-4xl font-bold w-18">SAP</h1>
+          <h1 className="text-4xl font-bold md:w-56">SAPNENDRA</h1>
         </Link>
         <div>
           <h5 className="font-medium mb-5">Services</h5>
           <ul className="flex flex-col gap-2 text-base lg:text-lg">
-            <li>
-              <a href="">Web Design</a>
-            </li>
-            <li>
-              <a href="">UI / UX</a>
-            </li>
-            <li>
-              <a href="">Web Development</a>
-            </li>
-            <li>
-              <a href="">Branding</a>
-            </li>
+            <li>Static Website Building</li>
+            <li>Dynamic Website Building</li>
+            <li>Full-Stack Website Building</li>
+            <li>E-Commerce Website Building</li>
           </ul>
         </div>
         <div>
@@ -40,8 +31,8 @@ const Footer = () => {
         <div>
           <h5 className="font-medium mb-5">Contact</h5>
           <ul className="flex flex-col gap-2 text-base lg:text-lg">
-            <li>sapnendrajaiswal2388@gmail.com</li>
-            <li>+91 9770 59 1104</li>
+            <li><a href="mailto:sapnendrajaiswal2388@gmail.com">sapnendrajaiswal2388@gmail.com</a></li>
+            <li>+91 9685238884</li>
           </ul>
         </div>
       </footer>

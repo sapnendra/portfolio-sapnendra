@@ -6,11 +6,11 @@ const Services = () => {
       {/* Title Wrapper */}
       <div className="bg-white text-black">
         <div className="main-container pb-8 lg:pb-12">
-          <h3>Services in Detail</h3>
+          <h3>MERN Projects:</h3>
         </div>
       </div>
 
-      {/* Services List */}
+      {/* Porojects */}
       <div className="relative">
         <div className="bg-black text-white pt-16 lg:pt-20 pb-[40rem] sticky top-4">
           <div className="main-container grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-start">
@@ -19,18 +19,15 @@ const Services = () => {
               <span className="text-gray-400 text-lg lg:text-2xl font-heading tracking-wide block mb-4">
                 01
               </span>
-              <h2 className="text-[8vw] md:text-6xl font-heading font-bold leading-[1]">
-                Web Design <br /> & UI/UX
+              <h2 className="text-[8vw] md:text-5xl font-heading font-bold leading-[1]">
+                Tech Terms <br /> MERN Application
               </h2>
             </div>
 
             {/* Right side */}
             <div className="flex items-center">
-              <p className="text-lg lg:text-xl leading-relaxed">
-                Crafting modern, user-focused websites with clean layouts,
-                thoughtful typography, and smooth interactions. Every design is
-                tailored to deliver both aesthetic appeal and seamless
-                usability.
+              <p className="text-lg lg:text-xl text-gray-300 leading-relaxed">
+                A full-stack web application that serves as a community-driven platform for defining and sharing technology terms. Users can create, read, update, and interact with technology term definitions while building a comprehensive knowledge base. 
               </p>
             </div>
           </div>
@@ -42,19 +39,15 @@ const Services = () => {
               <span className="text-gray-400 text-lg lg:text-2xl font-heading tracking-wide block mb-4">
                 02
               </span>
-              <h2 className="text-[8vw] md:text-6xl font-heading font-bold leading-[1]">
-                Website <br /> Development
+              <h2 className="text-[8vw] md:text-5xl font-heading font-bold leading-[1]">
+                ByteBloom- <br /> <span className="md:text-4xl">Client-Acquisition Website</span>
               </h2>
             </div>
 
             {/* Right side */}
             <div className="flex items-center">
               <p className="text-lg lg:text-xl leading-relaxed">
-                From modern layouts to advanced functionality, I design and
-                develop responsive websites that bring ideas to life and
-                strengthen your online presence. Each site is optimized for
-                performance, easy to manage, and delivers a smooth, engaging
-                user experience.
+                Client-acquisition website built with ReactJS, TailwindCSS, GSAP animations, and ExpressJS backend. Features admin panel, dark/light theme toggling, WhatsApp integration, and a clean, minimalistic design.
               </p>
             </div>
           </div>
@@ -66,18 +59,15 @@ const Services = () => {
               <span className="text-gray-400 text-lg lg:text-2xl font-heading tracking-wide block mb-4">
                 03
               </span>
-              <h2 className="text-[8vw] md:text-6xl font-heading font-bold leading-[1]">
-                Creative <br /> Branding
+              <h2 className="text-[8vw] md:text-5xl font-heading font-bold leading-[1]">
+                Portfolio- <br /> React & GSAP
               </h2>
             </div>
 
             {/* Right side */}
             <div className="flex items-center">
               <p className="text-lg lg:text-xl leading-relaxed">
-                Building strong brand identities through design, storytelling,
-                and visuals that connect with your audience. From logos to full
-                brand systems, I help create a consistent and memorable
-                presence.
+                A modern and fully responsive portfolio website built with React and GSAP animations. Showcasing projects, skills, and experience with smooth scrolling and engaging visual effects.
               </p>
             </div>
           </div>

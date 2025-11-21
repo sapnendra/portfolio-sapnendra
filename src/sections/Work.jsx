@@ -40,8 +40,10 @@ const Work = () => {
         {/* Title Wrapper */}
         <div className='main-container pb-8 lg:pb-12 flex max-md:flex-col gap-6 justify-between items-start md:items-end'>
           <div className='max-w-xl'>
-            <h3 className='mb-3'>Selected Work</h3>
-            <p className='text-lg lg:text-xl'>A showcase of my projects—designed to inspire, engage, and deliver real results.</p>
+            <h3 className='mb-3'>Explore Projects</h3>
+            <p className='text-lg lg:text-xl'>
+              A selection of my recent works showcasing my skills and expertise in web development and design.
+            </p>
           </div>
           <GradientButton text="Explore All" link="/projects" className="btn-light" />
         </div>
