@@ -86,14 +86,14 @@ const Hero = () => {
 
   return (
     <>
-      <div ref={heroRef} className='relative overflow-hidden z-0'>
+      <section ref={heroRef} className='relative overflow-hidden z-0' aria-label='Hero section'>
 
         {/* Text container */}
-        <div className="main-container h-screen flex flex-col lg:justify-center items-start lg:py-12 max-lg:pt-40">
+        <header className="main-container h-screen flex flex-col lg:justify-center items-start lg:py-12 max-lg:pt-40">
           <h1 className="text-3xl lg:text-[3.2vw] uppercase font-heading font-semibold">Sapnendra Jaiswal</h1>
-          <h2 className="text-6xl lg:text-[8vw] font-heading font-bold leading-[1] tracking-tight mt-3 mb-6">Web Developer <br/> & <span className='text-stroke'> Designer </span></h2>
+          <p className="text-6xl lg:text-[8vw] font-heading font-bold leading-[1] tracking-tight mt-3 mb-6" role="heading" aria-level="2">Full Stack <br/> Web<span className='text-5vh text-stroke'> Devv. </span></p>
           <GradientButton text="Let's Talk" link="mailto:sapnendrajaiswal2388@gmail.com" className="gradient-btn" />
-        </div>
+        </header>
 
         {/* shape */}
         <div className="star absolute -z-1 top-80 lg:top-32 right-[-35%] lg:right-[-12%] opacity-80">
@@ -111,7 +111,7 @@ const Hero = () => {
           </svg>
         </div>
         
-      </div>
+      </section>
     </>
   )
 }

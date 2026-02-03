@@ -33,10 +33,10 @@ const About = () => {
 
   return (
     <>
-      <div ref={aboutRef} className='h-screen bg-white rounded-tl-[60px] rounded-tr-[60px] relative z-10'>
+      <section ref={aboutRef} className='h-screen bg-white rounded-tl-[60px] rounded-tr-[60px] relative z-10' aria-label='About Sapnendra Jaiswal'>
           {/* Text container */}
-          <div className='about-text main-container py-4 lg:py-12 h-full flex justify-center items-center font-heading text-black text-2xl md:text-3xl xl:text-[40px] 2xl:text-5xl leading-[1.25]'>My approach combines clean code, modern design, and smooth user interactions to create web experiences that are both functional and engaging. From developing REST APIs and authentication systems to building AI-integrated and responsive websites, I focus on crafting digital solutions that not only work efficiently but also deliver a meaningful and seamless experience for users.</div>
-      </div>
+          <article className='about-text main-container py-4 lg:py-12 h-full flex justify-center items-center font-heading text-black text-2xl md:text-3xl xl:text-[40px] 2xl:text-5xl leading-[1.25]'>My approach combines clean code, modern design, and smooth user interactions to create web experiences that are both functional and engaging. From developing REST APIs and authentication systems to building AI-integrated and responsive websites, I focus on crafting digital solutions that not only work efficiently but also deliver a meaningful and seamless experience for users.</article>
+      </section>
     </>
   )
 }

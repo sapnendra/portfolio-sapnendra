@@ -8,4 +8,35 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    // Enable minification
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true, // Remove console logs in production
+        drop_debugger: true,
+      },
+    },
+    // Chunk splitting for better caching
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'gsap-vendor': ['gsap', '@gsap/react'],
+          'animation': ['lenis'],
+        },
+      },
+    },
+    // Enable source maps for debugging
+    sourcemap: false,
+    // Target modern browsers for smaller bundle
+    target: 'esnext',
+  },
+  // Performance optimizations
+  server: {
+    host: true,
+  },
+  preview: {
+    host: true,
+  },
 })

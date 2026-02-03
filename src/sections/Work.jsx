@@ -15,7 +15,7 @@ const Work = () => {
   useGSAP(() => {
     // Horizontal scroll
     const projectsWidth = projectsRef.current.scrollWidth;
-    const scrollDistance = projectsWidth - window.innerWidth;
+    const scrollDistance = projectsWidth - window.innerWidth + 100; // extra space to ensure full scroll
 
     gsap.to(projectsRef.current, {
       x: -scrollDistance,
@@ -23,9 +23,9 @@ const Work = () => {
       scrollTrigger: {
         trigger: workRef.current,
         start: "center center",
-        end: () => `+=${projectsWidth}`,
+        end: () => `+=${projectsWidth + 100}`,
         pin: true,
-        scrub: 1,
+        scrub: 1.5,
         anticipatePin: 1, // prevents flicker on fast scroll
         invalidateOnRefresh: true,
       },

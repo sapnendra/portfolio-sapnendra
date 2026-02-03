@@ -43,16 +43,17 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="main-container grid md:grid-cols-2 gap-3 py-6 lg:py-8 max-md:text-center">
         <div className="text-base lg:text-lg">
-          © 2025 ANSAP | All rights reserved
+          © 2025 Sapnendra - All rights reserved
         </div>
         <div className="flex gap-3 justify-center md:justify-end">
-          <a href="https://www.linkedin.com/in/sapnendra/">
+          <a href="https://www.linkedin.com/in/sapnendra/" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
             <svg
               width="30"
               height="30"
               viewBox="0 0 30 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 d="M8.67481 6.25003C8.67447 6.91307 8.41076 7.54882 7.94169 8.01743C7.47261 8.48604 6.8366 8.74911 6.17356 8.74878C5.51051 8.74845 4.87476 8.48474 4.40615 8.01566C3.93755 7.54659 3.67447 6.91057 3.67481 6.24753C3.67514 5.58449 3.93885 4.94874 4.40792 4.48013C4.877 4.01152 5.51301 3.74845 6.17605 3.74878C6.8391 3.74911 7.47485 4.01282 7.94346 4.4819C8.41206 4.95097 8.67514 5.58699 8.67481 6.25003ZM8.74981 10.6H3.7498V26.25H8.74981V10.6ZM16.6498 10.6H11.6748V26.25H16.5998V18.0375C16.5998 13.4625 22.5623 13.0375 22.5623 18.0375V26.25H27.4998V16.3375C27.4998 8.62503 18.6748 8.91253 16.5998 12.7L16.6498 10.6Z"
@@ -60,14 +61,14 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="https://github.com/sapnendra" aria-label="GitHub">
+          <a href="https://github.com/sapnendra" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
             <svg
               width="30"
               height="30"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
-              aria-hidden="false"
+              aria-hidden="true"
             >
               <title>GitHub</title>
               <path
@@ -76,13 +77,14 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="">
+          <a href="https://facebook.com/sapnendra" aria-label="Facebook Profile" target="_blank" rel="noopener noreferrer">
             <svg
               width="30"
               height="30"
               viewBox="0 0 30 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 d="M27.5 15C27.5 8.1 21.9 2.5 15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.05 6.8 26.0875 12.5 27.25V18.75H10V15H12.5V11.875C12.5 9.4625 14.4625 7.5 16.875 7.5H20V11.25H17.5C16.8125 11.25 16.25 11.8125 16.25 12.5V15H20V18.75H16.25V27.4375C22.5625 26.8125 27.5 21.4875 27.5 15Z"

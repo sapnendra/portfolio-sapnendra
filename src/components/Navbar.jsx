@@ -22,16 +22,21 @@ const Navbar = () => {
   
   return (
     <>
-      <nav ref={navbarRef} className='fixed top-0 z-30 w-full mix-blend-difference'>
+      <nav ref={navbarRef} className='fixed top-0 z-30 w-full bg-black backdrop-blur-md' aria-label='Main navigation'>
         <div className='main-container py-6 flex justify-between items-center'>
 
           {/* Logo */}
-          <Link to='/'>
+          <Link to='/' aria-label='Home - Sapnendra Jaiswal Portfolio'>
             <h1 className='text-4xl font-bold'>SAPNENDRA</h1>
           </Link>
 
           {/* Menu */}
-          <div onClick={() => setMenuOpen(!menuOpen)} className="menubar flex flex-col gap-1.5 cursor-pointer">
+          <button 
+            onClick={() => setMenuOpen(!menuOpen)} 
+            className="menubar flex flex-col gap-1.5 cursor-pointer"
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+          >
             <span
               className={`inline-block w-10 lg:w-12 h-0.5 bg-white transition-all duration-300 origin-center ${
                 menuOpen ? "rotate-45 translate-y-[4px]" : ""
@@ -43,7 +48,7 @@ const Navbar = () => {
                 menuOpen ? "-rotate-45 -translate-y-[4px]" : ""
               }`}
             ></span>
-          </div>
+          </button>
         </div>
       </nav>
 
