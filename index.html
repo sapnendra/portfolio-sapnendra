@@ -2,65 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./src/assets/images/logo.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./src/assets/images/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
     <!-- Primary Meta Tags -->
-    <title>Sapnendra Jaiswal - Full Stack Web Developer | MERN Stack Expert</title>
-    <meta name="title" content="Sapnendra Jaiswal - Full Stack Web Developer | MERN Stack Expert" />
-    <meta name="description" content="Sapnendra Jaiswal is a Full Stack Web Developer specializing in MERN stack, React, Node.js, MongoDB, and modern web technologies. Expert in building REST APIs, authentication systems, and AI-integrated responsive websites." />
-    <meta name="keywords" content="Sapnendra Jaiswal, Sapnendra, Full Stack Developer, MERN Stack Developer, React Developer, Node.js Developer, Web Developer, JavaScript Developer, Portfolio, MongoDB, Express.js, REST API, Authentication Systems, AI Integration" />
+    <title>
+      Sapnendra Jaiswal - Full Stack Web Developer | MERN Stack Expert
+    </title>
+    <meta
+      name="title"
+      content="Sapnendra Jaiswal - Full Stack Web Developer | MERN Stack Expert"
+    />
+    <meta
+      name="description"
+      content="Sapnendra Jaiswal is a Full Stack Web Developer specializing in MERN stack, React, Node.js, MongoDB, and modern web technologies. Expert in building REST APIs, authentication systems, and AI-integrated responsive websites."
+    />
+    <meta
+      name="keywords"
+      content="Sapnendra Jaiswal, Sapnendra, Full Stack Developer, MERN Stack Developer, React Developer, Node.js Developer, Web Developer, JavaScript Developer, Portfolio, MongoDB, Express.js, REST API, Authentication Systems, AI Integration"
+    />
     <meta name="author" content="Sapnendra Jaiswal" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sapnendra.tech/" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sapnendra.tech/" />
-    <meta property="og:title" content="Sapnendra Jaiswal - Full Stack Web Developer | MERN Stack Expert" />
-    <meta property="og:description" content="Full Stack Web Developer specializing in MERN stack, React, Node.js, and modern web technologies. Building REST APIs, authentication systems, and AI-integrated responsive websites." />
+    <meta
+      property="og:title"
+      content="Sapnendra Jaiswal - Full Stack Web Developer | MERN Stack Expert"
+    />
+    <meta
+      property="og:description"
+      content="Full Stack Web Developer specializing in MERN stack, React, Node.js, and modern web technologies. Building REST APIs, authentication systems, and AI-integrated responsive websites."
+    />
     <meta property="og:image" content="https://sapnendra.tech/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Sapnendra Jaiswal Portfolio" />
     <meta property="og:locale" content="en_US" />
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://sapnendra.tech/" />
-    <meta name="twitter:title" content="Sapnendra Jaiswal - Full Stack Web Developer" />
-    <meta name="twitter:description" content="Full Stack Web Developer specializing in MERN stack, React, Node.js, and modern web technologies." />
+    <meta
+      name="twitter:title"
+      content="Sapnendra Jaiswal - Full Stack Web Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full Stack Web Developer specializing in MERN stack, React, Node.js, and modern web technologies."
+    />
     <meta name="twitter:image" content="https://sapnendra.tech/og-image.jpg" />
     <meta name="twitter:creator" content="@sapnendra" />
-    
+
     <!-- Performance & Security -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="/manifest.json" />
-    
+
+    <!-- Font Preload for performance (Inter & Syne) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Structured Data - JSON-LD -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Sapnendra Jaiswal",
-      "url": "https://sapnendra.tech",
-      "image": "https://sapnendra.tech/og-image.jpg",
-      "jobTitle": "Full Stack Web Developer",
-      "description": "Full Stack Web Developer specializing in MERN stack, React, Node.js, MongoDB, Express.js, REST APIs, and modern web technologies",
-      "email": "sapnendrajaiswal2388@gmail.com",
-      "knowsAbout": ["React", "Node.js", "MongoDB", "Express.js", "JavaScript", "MERN Stack", "REST API", "Web Development", "Full Stack Development", "AI Integration", "Authentication Systems"],
-      "sameAs": [
-        "https://github.com/sapnendra",
-        "https://linkedin.com/in/sapnendra"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sapnendra Jaiswal",
+        "url": "https://sapnendra.tech",
+        "image": "https://sapnendra.tech/og-image.jpg",
+        "jobTitle": "Full Stack Web Developer",
+        "description": "Full Stack Web Developer specializing in MERN stack, React, Node.js, MongoDB, Express.js, REST APIs, and modern web technologies",
+        "email": "sapnendrajaiswal2388@gmail.com",
+        "knowsAbout": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "Express.js",
+          "JavaScript",
+          "MERN Stack",
+          "REST API",
+          "Web Development",
+          "Full Stack Development",
+          "AI Integration",
+          "Authentication Systems"
+        ],
+        "sameAs": [
+          "https://github.com/sapnendra",
+          "https://linkedin.com/in/sapnendra"
+        ]
+      }
     </script>
   </head>
   <body>
+    <!-- Skip to main content for keyboard/screen reader users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

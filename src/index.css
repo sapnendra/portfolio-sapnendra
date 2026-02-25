@@ -18,14 +18,44 @@
   );
 }
 
+/* ─── Skip-to-content ─── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1.25rem;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
 
 ::selection {
   color: #8e15ad;
   background-color: #ffffff;
 }
 
+/* ─── Focus-visible styles for keyboard accessibility ─── */
+:focus-visible {
+  outline: 2px solid #7b2ff7;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Don't show focus ring for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 @layer base {
-  html.lenis, html.lenis body {
+  html.lenis,
+  html.lenis body {
     height: auto;
   }
 
@@ -89,18 +119,21 @@
   }
 
   .btn {
-    background: linear-gradient(#000, #000) padding-box,
+    background:
+      linear-gradient(#000, #000) padding-box,
       var(--color-gradient) border-box;
   }
 
   .btn:hover {
-    background: var(--color-gradient) padding-box,
+    background:
+      var(--color-gradient) padding-box,
       var(--color-gradient) border-box;
     color: #fff;
   }
 
   .btn-light {
-    background: linear-gradient(#fff, #fff) padding-box,
+    background:
+      linear-gradient(#fff, #fff) padding-box,
       var(--color-gradient) border-box;
     color: black;
   }
@@ -149,5 +182,25 @@
 @media (max-width: 1023px) {
   h1::before {
     bottom: 4px;
+  }
+}
+
+/* ─── Reduced Motion ─── */
+/* Respects users who prefer reduced motion in their OS settings */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-marquee,
+  .animate-marquee-reverse,
+  .marquee-star1,
+  .marquee-star2 {
+    animation: none !important;
   }
 }
